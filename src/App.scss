@@ -1,0 +1,54 @@
+@import 'variables';
+
+#layout-container{
+  display:flex;
+  flex-direction: column;
+  margin-top:22px;
+
+  #contact-info{
+    border:1px solid red;
+  }
+
+  #summary{
+    border:1px solid green;
+  }
+}
+
+footer{
+  position:fixed;
+  bottom:0;
+  height:20px;
+  min-width:100%;
+  height: calc(1em + 20px);
+  border-top: 1px grey;
+  z-index:2;
+  opacity:.75;
+  background-color:white;
+
+  border:1px solid purple;
+  a{
+    text-transform:uppercase;
+    text-decoration: none;
+    position:absolute;
+    right:0;
+    padding-right:10px;
+    line-height:1em;
+  }
+
+
+}
+
+
+@media(min-width:$screen-medium){
+  #layout-container{
+    flex-direction: row;
+
+    #contact-info{
+      flex-basis:40%
+    }
+
+    #summary{
+      flex-basis:60%;
+    }
+  }
+}
