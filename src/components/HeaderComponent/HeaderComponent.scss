@@ -1,0 +1,33 @@
+@import '../../variables';
+
+.link-container{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-around;
+
+  a.header-link{
+    color:$color-gray;
+    line-height:calc(1em + 20px);
+    text-transform:uppercase;
+    text-decoration: none;
+    padding-right:5px;
+    padding-left:5px;
+    margin:0;
+    &:hover{
+      background-color: rgba($color-gray,.25);
+    }
+  }
+}
+
+@media(min-width:$screen-small){
+  .link-container{
+    justify-content:flex-end;
+
+    a{
+      &:not(:first-child){
+        //margin-right:20px;
+        border-radius:3px 0px 0px 3px;
+      }
+    }
+  }
+}

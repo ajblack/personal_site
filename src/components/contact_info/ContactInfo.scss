@@ -1,10 +1,31 @@
-img{
-  height:50px;
+@import '../../variables';
+
+.content-container{
+  display:flex;
+  flex-direction:column;
+
+  ul{
+    padding:0;
+    margin:0;
+    margin-bottom:20px;
+    li{
+      list-style:none;
+      line-height:1.5em;
+    }
+  }
 }
 
-ul{
-  padding:0;
-  li{
-    list-style:none;
+
+@media(min-width: $screen-small) and (max-width: $screen-medium){
+  .content-container{
+    width:100%;
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: space-around;
+
+    ul{
+      margin:0;
+    }
   }
 }
