@@ -8,7 +8,7 @@ export default function ContactInfo(){
       <h1>Austin Blackman</h1>
       <ul>
         <li>
-          <a href={'/austin_blackman_resume.pdf'}>
+          <a href={'/resume.pdf'} target='_blank'>
             resume {''}<i className="fas fa-file-pdf"></i>
           </a>
         </li>
